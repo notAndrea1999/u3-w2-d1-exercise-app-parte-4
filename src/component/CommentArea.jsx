@@ -44,8 +44,8 @@ class CommentArea extends Component {
   render() {
     return (
       <div className="mt-4">
-        <CommentList list={this.state.savedComments} />
-        <AddComment id={this.props.id} />
+        <CommentList list={this.state.savedComments} reloadFetch={this.fetchComments} />
+        <AddComment id={this.props.id} reloadFetch={this.fetchComments} />
       </div>
     );
   }

@@ -27,6 +27,7 @@ class AddComment extends Component {
           rate: "",
           elementId: this.props.id,
         });
+        this.props.reloadFetch();
       }
     } catch (error) {
       console.log(error);
